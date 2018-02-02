@@ -1,0 +1,38 @@
+#Inputs
+NET "CLK" LOC = "B8";	#CLOCK
+
+NET "Reset" LOC = "G12";#BTN0
+NET "Push" 	LOC = "A7";	#BTN3
+
+
+#outputs
+	#LEDs 7-0
+NET "SalRI<7>" LOC = "G1" ; 
+NET "SalRI<6>" LOC = "P4" ; 
+NET "SalRI<5>" LOC = "N4" ; 
+NET "SalRI<4>" LOC = "N5" ; 
+NET "SalRI<3>" LOC = "P6" ; 
+NET "SalRI<2>" LOC = "P7" ; 
+NET "SalRI<1>" LOC = "M11";
+NET "SalRI<0>" LOC = "M5" ; 
+
+	#Display 7Seg_4ON
+NET "Catodo<0>" LOC = "L14";
+NET "Catodo<1>" LOC = "H12";
+NET "Catodo<2>" LOC = "N14";
+NET "Catodo<3>" LOC = "N11";
+NET "Catodo<4>" LOC = "P12";
+NET "Catodo<5>" LOC = "L13";
+NET "Catodo<6>" LOC = "M12";
+
+NET "Anodo<0>" LOC = "F12";
+NET "Anodo<1>" LOC = "J12";
+NET "Anodo<2>" LOC = "M13";
+NET "Anodo<3>" LOC = "K14";
+
+	#External LEDS
+	#AddressBus
+NET "AddressBus<2>" LOC = "B5";
+NET "AddressBus<1>" LOC = "B7";
+NET "AddressBus<0>" LOC = "C9";
+NET "SalFZ"         LOC = "D12";#SalFZ
